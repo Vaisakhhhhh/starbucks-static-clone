@@ -1,0 +1,586 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main-body{
+    padding-top: 73px;
+    font-family:SoDoSans_Semibold, Helvetica, sans-serif ;
+}
+
+/* header section  */
+header{
+    width: 100%;
+    height: 73px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    box-shadow: 0 1px 3px rgba( 0, 0, 0, .2);
+}
+.nav-bar{
+    height: 100%;
+    width: 1310px;
+   
+    display: flex;
+    align-items: center;
+    
+    
+}
+#logo{
+    width: 45px;
+    height: 45px;
+    margin-left: 14px;
+    margin-right: 30px;
+}
+
+.nav-content{
+    display: flex;
+    padding: 0;
+    
+}
+.nav-content li{
+    font-size: 16px;
+    color: #212529;
+    list-style: none;
+    padding-left: 32px;
+    padding-right: 32px;
+    
+}
+.search-bar-section{
+    width: 260px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 1px 5px rgba(0 , 0, 0, .4);
+    margin-left: 310px;
+    display: flex;
+    height: 35px;
+    display: flex;
+    margin-right: 100px;
+}
+#search-logo{
+    width: 20px;
+    margin-left: 20px;
+    margin-right: 12px;
+}
+#search-bar{
+    flex: 1;
+    border: none;
+    border-radius: 20px;
+}
+
+/* remainder section  */
+.remainder-box{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(30, 57, 50);
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.remainder-content{
+    width: 1310px;
+    
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right:110px;
+}
+.remainder-para{
+    font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-left: 60px;
+    color: white;
+} 
+.remainder-button{
+    height: 33px;
+    width: 95px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: rgb(30, 57, 50);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+   
+}
+
+/* recommends section  */
+.recommends{
+    width: 100%;
+    height: 290px;
+    background-color: #edebe9;
+    margin-top: 24px;
+    padding-top: 32px;
+    position: relative;
+    
+    margin-bottom: 40px;
+
+}
+.menu{
+    width: 85%;
+    height: 220px;
+    
+    margin-left: 130px;
+    
+}
+.menu h4{
+     display: inline-block;
+     font-size: 24px;
+     color:rgb(30, 57, 50) ;
+     
+}
+.menu h5{
+    display: inline-block;
+    color: gray;
+}
+.main-food-box{
+    width: 100%;
+    height: 161px;
+    
+    margin-top: 32px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.food-box{
+    height: 161px;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 1px 0 5px rgba(0, 0, 0, .5);
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    cursor: pointer;
+
+}
+.food-img{
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.food-status{
+    
+    height: 80px;
+  margin-left: 12px;
+  padding-top: 4px;
+}
+.food-name{
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+.food-qty{
+    font-family: Pike_Regular,Helvetica,sans-serif;
+    color: gray;
+    font-size: 9px;
+}
+.food-rate{
+    display: flex;
+    height: 35px;
+    margin-top: 5px;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+.food-rate button{
+    background-color: rgb(0, 117, 74);
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    transition: background-color .15s;
+    cursor: pointer;
+}
+.food-rate button:hover{
+    background-color: rgb(30, 57, 50);
+}
+
+/* subscription section  */
+.subscription{
+    width: 100%;
+    height: 250px;
+    
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    margin-bottom: 70px;
+}
+.subscription-box{
+    width: 1323px;
+    height: 220px;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+#background-image{
+    width: 1323px;
+    height: 220px;
+    border-radius: 8px;
+    position:absolute ;
+    z-index: -1;
+}
+.left-section{
+     width: 175px;
+    height: 220px;
+    position: relative;
+    
+}
+#swiper-left{
+    position: absolute;
+    left: -38px;
+    top: 80px;
+}
+
+#subscription-box-image{
+    height: 200px;
+    width: 100px;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+.centre-section{
+    flex: 1;
+    color: white;
+   
+}
+.centre-section h6{
+    font-size: 15px;
+    margin-top: 20px;
+}
+.centre-section h2{
+    font-size: 20px;
+    margin-top: 20px;
+}
+#subscription-para1{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+#subscription-para2{
+    font-size: 13px;
+    font-weight: lighter;
+    margin-top: 40px;
+}
+#subscription-para3{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 3px;
+}
+.right-section{
+    width: 300px;
+    position: relative;
+}
+
+.right-section h6{
+    margin-left: 210px;
+    margin-top: 5px;
+    color: white;
+}
+.right-section button{
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    margin-top: 130px;
+    margin-left: 70px;
+    cursor: pointer;
+}
+#swiper-right{
+    position: absolute;
+    top: 80px;
+    right: -38px;
+}
+
+/* handcraft section  */
+.handcraft-title{
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    font-size: 25px;
+    padding-left: 110px;
+    color: #1e3932;
+}
+.handcraft-container{
+    width: 100%;
+    height: 160px;
+    padding-left: 110px;
+    margin-bottom: 40px;
+}
+.handcrafte-product-box{
+    height: 100%;
+    width: 1274px;
+    display: flex;
+    gap: 100px;
+}
+.handcraft-product{
+    width: 140px;
+    height: 100%;
+    cursor: pointer;
+    
+}
+.handcraft-product-image{
+    width: 108px;
+    height: 108px;
+    border-radius: 60px;
+    object-fit: cover;
+    margin-left: 15px;
+    
+}
+.handcraft-product-image:hover{
+    border: 2px solid rgb(30, 57, 50);;
+}
+.image-names{
+    width: 100%;
+    height: 30px;
+    
+    display: flex;
+    justify-content: center;
+}
+.image-names p{
+    font-weight: bold;
+    margin-left: 16px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* offer section  */
+.offer-container{
+    width: 100%;
+    height: 420px;
+    margin-bottom: 80px;
+   
+}
+#offer-title{
+    font-weight: bolder;
+    font-size: 24px;
+    color:  #1e3932;
+    margin-left: 110px;
+
+}
+.offer-box{
+    width: 1320px;
+    height: 359px;
+    display: flex;
+    justify-content: space-between;
+    margin-left:115px ;
+    margin-top: 33px;
+}
+.offer-product{
+    width: 423px;
+    height: 100%;
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    box-shadow: 1px 0 5px rgba( 0, 0, 0, .5);
+    position: relative;
+    cursor: pointer;
+}
+#swiper-r{
+    position: absolute;
+    top: 150px;
+    right: -40px;
+}
+#swiper-l{
+    position: absolute;
+    top: 150px;
+    left: -40px;
+}
+.offer-product-image{
+    height: 167px;
+    width: 423px;
+    object-fit: cover;
+    margin-bottom: 0;
+    border-radius: 10px  10px 0 0;
+}
+.offer-product-details{
+    width: 375px;
+    height: 160px;
+   
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 18px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.offer-product-details h6{
+    color: gray;
+    font-size: 9px;
+    margin-top: 5px;
+}.offer-product-details p{
+    color: gray;
+    font-size: 11.8px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    margin: 10px 0;
+    width: 350px;
+}
+.bottom-bar{
+    width: 370px;
+    height: 35px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom-bar button{
+    height: 30px;
+    width: 100px;
+    background-color:  rgb(0, 117, 74);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    transition: backrround-color .15s;
+    cursor: pointer;
+}
+.bottom-bar button:hover{
+    background-color: #212529;
+}
+
+/* More About Coffee section*/
+
+.more-about-coffee-container{
+    height: 497px;
+    width: 100%;
+    background-color: #EDEBE9;
+    position: relative;
+    z-index: -2;
+    margin-bottom: 40px;
+}
+.coffee-title{
+    width: 1320px;
+    height: 93px;
+   
+    margin-left: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}.coffee-title h3{
+    font-size: 25px;
+    color: #212529;;
+}
+.coffee-title h5{
+   color: rgb(0, 117, 74);
+   margin-right: 20px;
+}
+.coffee-contant{
+    height: 345px;
+    width: 1275px;
+   
+    margin-left: 160px;
+    margin-top: 20px;
+}
+.coffee-culture{
+    width: 80px;
+    height: 20px;
+    background-color:#EDEBE9;
+    padding-left: 4px;
+    padding-top: 4px;
+    border-radius: 4px;
+    color: rgb(0, 117, 74);;
+}
+.coffee-contant h1{
+    font-size: 28px;
+    margin-top: 160px;
+    color: white;
+}.coffee-contant p{
+    font-size: 14.5px;
+    margin-top: 21px;
+    color: white;
+}.coffee-contant button{
+    width: 200px;
+    height: 32px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 45px;
+    border: none;
+    background-color: white;
+    
+}
+.coffee-container-image{
+    width: 1322px;
+    height: 372px;
+    object-fit: cover;
+    position: absolute;
+    top: 94px;
+    left: 120px;
+    z-index: -1;
+    border-radius: 8px;
+    
+}
+
+
+/* footer-section */
+
+.footer-container{
+    width: 100%;
+    background-color: #0E382C;
+    display: flex;
+    justify-content: center;
+}
+.footer-box{
+    width: 1308px;
+    height: 663px;
+   
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.footer-content-body{
+    width: 1308px;
+    height: 574px;
+   
+    display: flex;
+}
+
+.footer-content-body-box{
+    width: 218px;
+    height: 100%;
+   
+    padding-left: 10px;
+    color: white;
+}
+.footer-content-body-box p{
+    margin-bottom: 20px;
+}
+.footer-content-body-box h3{
+    margin-bottom: 10px;
+}
+.footer-content-body-box img{
+    margin-right: 20px;
+}
+.footer-end-bar{
+    width: 1300px;
+    height: 50px;
+   
+    margin-left: 8px;
+    margin-top: 39px;
+    display: flex;
+    border-top: 1px solid gray;
+    color: whitesmoke;
+}
+.footer-end-bar p{
+    font-size: 13px;
+  
+    margin-right: 10px;
+    margin-top: 30px;
+   
+}
+.footer-end-bar h5{
+    margin-right: 10px;
+    margin-top: 30px;
+
+}.footer-end-bar h6{
+    margin-left: 570px;
+    margin-top: 30px;
+    
+}
+/* end  */
